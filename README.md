@@ -1,10 +1,10 @@
 # PickMyChamp
 Utility to generate the best choice of champion in a game of League of Legends (LoL).
 
-![Project Sample](SampleOutput.png)
-
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details
+
+![Project Sample](SampleOutput.png)
 
 ### How does it work?
 
