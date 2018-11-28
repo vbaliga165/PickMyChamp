@@ -1,4 +1,4 @@
-PickMyChamp is a utility to generate the best choice champions in a game of League of Legends (LoL).
+PickMyChamp is a utility to generate the best choice of champion in a game of League of Legends (LoL).
 
 ![Project Sample](SampleOutput.png)
 
