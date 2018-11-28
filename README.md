@@ -4,7 +4,7 @@ PickMyChamp is a utility to generate the best choice of champion in a game of Le
 
 ### How does it work?
 
-The project can be broken down into 3 components:
+This project can be broken down into 3 components:
    1. Collecting and manipulating user input
       - To keep things simple, we only ask for a summoner username and opponent the user is facing, in order to develop a *pseudo "profile"* of the user and their possible picks for the game.
       - Although we request information from the user at various points, we have to actually interpret it to come to a conclusion. We have basic information about the user, but **how do we actually _transcribe_ it?**
