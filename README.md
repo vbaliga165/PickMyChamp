@@ -40,6 +40,15 @@ This project can be broken down into 3 components:
    2. Gathering user-specific data
    3. Organizing data in a comprehensible format
 
+## FAQ
+
+- **How do I generate a champion for a *specific* lane?**
+    - As of yet, this feature is not supported. Check back for future updates!
+- **Will this utility be supported on a mobile platform or website?**
+    - We are in the process of making (http://pickmychamp.com)! Expect it by the end of 2018.
+- **How can I currently support PickMyChamp?**
+    - Spreading the word or generating test cases is more than enough! We're always looking for feedback, so please reach out to us with advice or ideas for future capabilities.
+
 ## License
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
