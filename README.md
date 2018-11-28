@@ -8,6 +8,10 @@ The project can be broken down into 3 components:
    1. Collecting and manipulating user input
       - To keep things simple, we only ask for a summoner username and opponent the user is facing, in order to develop a *pseudo "profile"* of the user and their possible picks for the game.
       - Although we request information from the user at various points, we have to actually interpret it to come to a conclusion. We have basic information about the user, but **how do we actually _transcribe_ it?**
+      	- Throughout the whole runtime of the application, we only webscrape from two sources:
+       	  i. LoL database for user statistics: [op.gg](http://na.op.gg)
+	  ii. Portal of good/bad picks for any and every champion that exists in LoL: [lolcounter](https://www.lolcounter.com)
+	  
        ```python 
        def get_true_url(text_to_add, url_to_add, symbol):
 	        final_url = url_to_add
