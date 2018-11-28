@@ -1,12 +1,9 @@
 # PickMyChamp
 Utility to generate the best choice of champion in a game of League of Legends (LoL).
 
-## License
-This project is licensed under the MIT License - see the [LICENSE.txt](https://github.com/vsb321/PickMyChamp/blob/master/LICENSE.txt) file for details
+![Project Sample](SampleOutput.png)
 
 ### How does it work?
-
-![Project Sample](SampleOutput.png)
 
 This project can be broken down into 3 components:
    1. Collecting and manipulating user input
@@ -42,3 +39,6 @@ This project can be broken down into 3 components:
        The input username (Imaqtpie) and the input enemy champion (Akali) are simply appended to a generic url displaying data and statistics. In the case that either inputs exceed one word, a symbol such as *'+'* is concatenated between each additional word. This is all accomplished through the ```get_true_url()``` function.
    2. Gathering user-specific data
    3. Organizing data in a comprehensible format
+
+## License
+This project is licensed under the MIT License - see the [LICENSE.txt](https://github.com/vsb321/PickMyChamp/blob/master/LICENSE.txt) file for details
