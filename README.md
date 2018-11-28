@@ -2,7 +2,7 @@
 Utility to generate the best choice of champion in a game of League of Legends (LoL).
 
 ## License
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the [LICENSE.txt](https://github.com/vsb321/PickMyChamp/blob/master/LICENSE.txt) file for details
 
 ![Project Sample](SampleOutput.png)
 
