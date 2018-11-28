@@ -28,5 +28,10 @@ This project can be broken down into 3 components:
 			        i = i + 1
 	        return final_url
        ```
+       To create a final URL to parse and webscrape from, we must generate it from the user input. Let us examine the makeup of URLs for both sources using the sample output above.
+       
+       | Username URL     | Champion URL |
+       | ------------- | ------------- |
+       | http://na.op.gg/summoner/userName=Imaqtpie | https://www.lolcounter.com/champions/akali/weak or https://www.lolcounter.com/champions/akali/strong      |
    2. Gathering user-specific data
    3. Organizing data in a comprehensible format
