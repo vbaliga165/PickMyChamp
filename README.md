@@ -41,4 +41,8 @@ This project can be broken down into 3 components:
    3. Organizing data in a comprehensible format
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.txt](https://github.com/vsb321/PickMyChamp/blob/master/LICENSE.txt) file for details
+
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+- Copyright 2018 © <a href="http://vijaybaliga.com" target="_blank">Vijay Baliga</a>.
