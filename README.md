@@ -3,7 +3,7 @@ Utility to generate the best choice of champion in a game of League of Legends (
 
 ![Project Sample](SampleOutput.png)
 
-### How does it work?
+## How does it work?
 
 This project can be broken down into 3 components:
    1. Collecting and manipulating user input
