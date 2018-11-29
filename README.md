@@ -21,9 +21,9 @@ python PickMyChamp.py
 
 This project can be broken down into 3 components:
    1. Collecting and manipulating user input
-      - To keep things simple, we only ask for a summoner username and opponent the user is facing, in order to develop a *pseudo "profile"* of the user and their possible picks for the game.
-      - Although we request information from the user at various points, we have to actually interpret it to come to a conclusion. We have basic information about the user, but **how do we actually _transcribe_ it?**
-      	- Throughout the whole runtime of the application, we only webscrape two distinct sources:
+      - To keep things simple, I only ask for a summoner username and opponent the user is facing, in order to develop a *pseudo "profile"* of the user and their possible picks for the game.
+      - Although we request information from the user at various points, we have to actually interpret it to come to a conclusion. I have basic information about the user, but **how do I actually _transcribe_ it?**
+      	- Throughout the whole runtime of the application, I only webscrape two distinct sources:
        	    1. LoL database for user statistics: [op.gg](http://na.op.gg)
 	        2. Portal of good/bad picks for any and every champion that exists in LoL: [lolcounter](https://www.lolcounter.com)
 	  
@@ -43,7 +43,7 @@ This project can be broken down into 3 components:
 			        i = i + 1
 	        return final_url
        ```
-       To create a final URL to parse and webscrape from, we must generate it from the user input. Let us examine the makeup of URLs for both sources using the sample output above, as well as for another set of inputs.
+       To create a final URL to parse and webscrape from, I had to generate it from the user input. Let's examine the makeup of URLs for both sources using the sample output above, as well as for another set of inputs.
        
        | Username URL     | Champion URL |
        | ------------- | ------------- |
@@ -52,9 +52,9 @@ This project can be broken down into 3 components:
        
        The input username (Imaqtpie) and the input enemy champion (Akali) are simply appended to a generic url displaying data and statistics. In the case that either inputs exceed one word, a symbol such as *'+'* is concatenated between each additional word. This is all accomplished through the ```get_true_url()``` function.
    2. Gathering user-specific data
-      - After opening the connection to our sources and parsing the HTML to an applicable format for operating upon, we must scrape the HTML for the variables to use in our calculations. 
+      - After opening the connection to our sources and parsing the HTML to an applicable format for operating upon, I had to scrape the HTML for the variables to use in my calculations. 
    ![Data Sample](DataSample.png)
-   When deciding a player's rating on a champion in comparison to the rest of their champion pool, we had to take a few factors into consideration: **Kill/Death/Assist Ratio, Games Played, Win Ratio.** Once this data was identified, we had to _search for and extract it_ within the HTML. Here is a portion of an HTML sample for a champion we worked with:
+   When deciding a player's rating on a champion in comparison to the rest of their champion pool, I had to take a few factors into consideration: **Kill/Death/Assist Ratio, Games Played, Win Ratio.** Once this data was identified, I had to _search for and extract it_ within the HTML. Here is a portion of an HTML sample for a champion we worked with:
    
      <td class="RatioGraph Cell" data-value="65.957446808511">
        <div class="WinRatioGraph">
@@ -69,6 +69,8 @@ This project can be broken down into 3 components:
        </div>
       </td>
        
+   To scrape the static winrate from the HTML, I had to search for ```<td>``` tags, going **layer by layer** until I got to the magic number I was looking for. Repeating this step for KDA ratio and Games played, the simplest way to work with this data was with ```Champion()``` objects in an array.
+   
    3. Organizing data in a comprehensible format
 
 ## FAQ
