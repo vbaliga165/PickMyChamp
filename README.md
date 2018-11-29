@@ -54,7 +54,7 @@ This project can be broken down into 3 components:
    2. Gathering user-specific data
       - After opening the connection to our sources and parsing the HTML to an applicable format for operating upon, we must scrape the HTML for the variables to use in our calculations. 
    ![Data Sample](DataSample.png)
-   When deciding a player's rating on a champion in comparison to the rest of their champion pool, we had to take a few factors into consideration: **Kill/Death/Assist Ratio, Games Played, Win Ratio.** Once this data was identified, we had to _search for and extract it_ within the HTML. Here is an HTML sample for a champion we worked with:
+   When deciding a player's rating on a champion in comparison to the rest of their champion pool, we had to take a few factors into consideration: **Kill/Death/Assist Ratio, Games Played, Win Ratio.** Once this data was identified, we had to _search for and extract it_ within the HTML. Here is a portion of an HTML sample for a champion we worked with:
    
      
      <td class="RatioGraph Cell" data-value="65.957446808511">
@@ -69,14 +69,6 @@ This project can be broken down into 3 components:
          <span class="WinRatio red">66%</span>
        </div>
       </td>
-      <td class="KDA Cell normal" data-value="2.84">
-	    <div class="KDA">
-	       <span class="Kill">10.0</span> /
-	       <span class="Death">5.7</span> /
-	       <span class="Assist">6.2</span>
-	    </div>
-	    2.84:1
-       </td>
        
    3. Organizing data in a comprehensible format
 
