@@ -3,6 +3,20 @@ Utility to generate the best choice of champion in a game of League of Legends (
 
 ![Project Sample](SampleOutput.png)
 
+## Installing
+
+Clone the repository to your computer using
+
+```
+git clone git://github.com/vsb321/PickMyChamp
+```
+
+In the directory, run
+
+```
+python PickMyChamp.py
+```
+
 ## How does it work?
 
 This project can be broken down into 3 components:
