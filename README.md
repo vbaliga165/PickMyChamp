@@ -5,7 +5,7 @@ Utility to generate the best choice of champion in a game of League of Legends (
 
 ## Installing
 
-Clone the repository to your computer using
+Clone the repository to your computer 
 
 ```
 git clone git://github.com/vsb321/PickMyChamp
