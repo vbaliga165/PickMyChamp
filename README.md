@@ -11,7 +11,7 @@ Clone the repository to your computer
 git clone git://github.com/vsb321/PickMyChamp
 ```
 
-In the directory, run
+In the directory, execute
 
 ```
 python PickMyChamp.py
