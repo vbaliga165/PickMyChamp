@@ -56,7 +56,6 @@ This project can be broken down into 3 components:
    ![Data Sample](DataSample.png)
    When deciding a player's rating on a champion in comparison to the rest of their champion pool, we had to take a few factors into consideration: **Kill/Death/Assist Ratio, Games Played, Win Ratio.** Once this data was identified, we had to _search for and extract it_ within the HTML. Here is a portion of an HTML sample for a champion we worked with:
    
-     
      <td class="RatioGraph Cell" data-value="65.957446808511">
        <div class="WinRatioGraph">
          <div class="Graph">
