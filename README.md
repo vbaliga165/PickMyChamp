@@ -52,6 +52,7 @@ This project can be broken down into 3 components:
        
        The input username (Imaqtpie) and the input enemy champion (Akali) are simply appended to a generic url displaying data and statistics. In the case that either inputs exceed one word, a symbol such as *'+'* is concatenated between each additional word. This is all accomplished through the ```get_true_url()``` function.
    2. Gathering user-specific data
+   
    After opening the connection to our sources and parsing the HTML to an applicable format for operating upon, I had to scrape the HTML for the variables to use in my calculations.      
    ![Data Sample](DataSample.png)
       
