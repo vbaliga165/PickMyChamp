@@ -73,8 +73,7 @@ This project can be broken down into 3 components:
 	       </div>
 	      </td>
 	      ```
-      
-         To scrape the static winrate from the HTML, I had to search for ```<td>``` tags, going **layer by layer** until I got to the magic number I was looking for. Repeating this step for KDA ratio and Games played, the simplest way to work with this data was with ```Champion()``` objects in an array.
+         To scrape the static winrate from the HTML, I had to search for ```<td>``` tags, going **layer by layer** until I got to the magic number I was looking for. Repeating this step for KDA ratio and Games played, the simplest way to work with this data was with ```Champion()``` objects in an array storing a user's champion pool.
    
    3. Organizing data in a comprehensible format
 
