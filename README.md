@@ -59,20 +59,21 @@ This project can be broken down into 3 components:
       
       When deciding a player's rating on a champion in comparison to the rest of their champion pool, I had to take a few factors into consideration: **Kill/Death/Assist Ratio, Games Played, Win Ratio.** Once this data was identified, I had to _search for and extract it_ within the HTML. Here is a portion of an HTML sample for a champion we worked with:
      
-	     ```
-	     <td class="RatioGraph Cell" data-value="65.957446808511">
-	       <div class="WinRatioGraph">
-		 <div class="Graph">
-		    <div class="Fill Left" style="width: 65%"></div>
-		    <div class="Text Left">62W</div>
-		    <div class="Fill Right"></div>
-		    <div class="Text Right">32L</div>
-		    <div class="Bar" style="left: 65%;"></div>
-		 </div>
-		 <span class="WinRatio red">66%</span>
-	       </div>
-	      </td>
-	      ```
+		     
+		     <td class="RatioGraph Cell" data-value="65.957446808511">
+		       <div class="WinRatioGraph">
+			 <div class="Graph">
+			    <div class="Fill Left" style="width: 65%"></div>
+			    <div class="Text Left">62W</div>
+			    <div class="Fill Right"></div>
+			    <div class="Text Right">32L</div>
+			    <div class="Bar" style="left: 65%;"></div>
+			 </div>
+			 <span class="WinRatio red">66%</span>
+		       </div>
+		      </td>
+		      
+	      
          To scrape the static winrate from the HTML, I had to search for ```<td>``` tags, going **layer by layer** until I got to the magic number I was looking for. Repeating this step for KDA ratio and Games played, the simplest way to work with this data was with ```Champion()``` objects in an array storing a user's champion pool.
    
    3. Organizing data in a comprehensible format
