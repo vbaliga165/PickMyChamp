@@ -1,7 +1,7 @@
 # PickMyChamp
 Do you ever dodge queue or pick Vayne mid because because you don't know who else to play? PickMyChamp is a solution to all your problems: a utility to generate the best choice of champion in a game of League of Legends (LoL).
 
-![Project Sample](SampleOutput.png)
+![Project Sample](images/SampleOutput.png)
 
 ## Installing
 
@@ -55,7 +55,7 @@ This project can be broken down into 3 components:
    
       After opening the connection to our sources and using [Beautifil Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) to parse the HTML to an applicable format for operating upon, I had to scrape the HTML for the variables to use in my calculations.      
       
-      ![Data Sample](DataSample.png)
+      ![Data Sample](images/DataSample.png)
       
       When deciding a player's rating on a champion in comparison to the rest of their champion pool, I had to take a few factors into consideration: **Kill/Death/Assist Ratio, Games Played, Win Ratio.** Once this data was identified, I had to _search for and extract it_ within the HTML. Here is a portion of an [HTML sample](SampleChampAttributes.html) for a champion we worked with:
      
