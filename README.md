@@ -51,7 +51,7 @@ This project can be broken down into 3 components:
        | http://na.op.gg/summoner/userName=Hide+on+Bush | https://www.lolcounter.com/champions/twistedfate/weak or https://www.lolcounter.com/champions/twistedfate/strong      |
        
        The input username (Imaqtpie) and the input enemy champion (Akali) are simply appended to a generic url displaying data and statistics. In the case that either inputs exceed one word, a symbol such as *'+'* is concatenated between each additional word. This is all accomplished through the ```get_true_url()``` function.
-   2. Gathering user-specific data
+   2. Gathering and organizing user-specific data
    
       After opening the connection to our sources and using [Beautifil Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) to parse the HTML to an applicable format for operating upon, I had to scrape the HTML for the variables to use in my calculations.      
       
@@ -76,7 +76,8 @@ This project can be broken down into 3 components:
 	      
          To scrape the static winrate from the HTML, I had to search for ```<td>``` tags, going **layer by layer** until I got to the magic number I was looking for. Repeating this step for KDA ratio and Games played, the simplest way to work with this data was with ```Champion()``` objects in an array storing a user's champion pool. I had to repeat this process to generate the opponent counter list array as well.
    
-   3. Organizing data in a comprehensible format
+   3. Coming to a conclusion of champions
+   
 
 ## FAQ
 
