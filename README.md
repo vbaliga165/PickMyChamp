@@ -78,7 +78,7 @@ This project can be broken down into 3 components:
    
    3. Coming to a conclusion of champions
 
-      - In order to generate a list of top champions for the user to play, I needed some sort of relation between games played, KDA and win rate. 
+      - In order to generate a list of top champions for the user to play, I needed some sort of relation between *games played, KDA and win rate*. 
       ```python 
        X = frame[['Games','KDA']] 
        Y = frame['Win Rate']
