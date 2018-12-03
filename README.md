@@ -86,8 +86,10 @@ This project can be broken down into 3 components:
        regr = linear_model.LinearRegression()
        regr.fit(X, Y)
        ```
-        - Using [pandas](https://pandas.pydata.org) and [sklearn](https://scikit-learn.org/stable/), I implemented a multiple linear regression with a data frame. The independent (x) variables were games played and KDA, and the dependent (y) variable was win rate. In other words, I was testing the effects that the number games played and the KDA ratio had on a champion's win rate.
-	![Graph](images/KDAVsWR.png)
+        - Using [pandas](https://pandas.pydata.org) and [sklearn](https://scikit-learn.org/stable/), I implemented a multiple linear regression with a data frame. The **independent (x)** variables were games played and KDA, and the **dependent (y)** variable was win rate. In other words, I was testing the effects that the number games played and the KDA ratio had on a champion's win rate.
+![Graph](images/KDAVsWR.png)
+        - When I had generated a prediction of weights for each champion using user-specific stats, I also had to take counter picks into account. If the opponent was strong against a champion in the user's pool, that champion's corresponding weight was multipled by ```0.75```. As you can guess, If the opponent was weak against a champion, the weight was multiplied by ```1.25```. 
+        - Sorting the array of weights in descending order, the *champions with the top three highest weights* were returned and printed!
 ## FAQ
 
 - **How do I generate a champion for a *specific* lane?**
