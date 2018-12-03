@@ -78,6 +78,16 @@ This project can be broken down into 3 components:
    
    3. Coming to a conclusion of champions
 
+      - In order to generate a list of top champions for the user to play, I needed some sort of relation between games played, KDA and win rate. 
+      ```python 
+       X = frame[['Games','KDA']] 
+       Y = frame['Win Rate']
+
+       regr = linear_model.LinearRegression()
+       regr.fit(X, Y)
+       ```
+        - Using [pandas](https://pandas.pydata.org) and [sklearn](https://scikit-learn.org/stable/), I implemented a multiple linear regression with a data frame. The independent (x) variables were games played and KDA, and the dependent (y) variable was win rate. In other words, I was testing the effects that the number games played and the KDA ratio had on a champion's win rate.
+	![Graph](images/KDAVsWR.png)
 ## FAQ
 
 - **How do I generate a champion for a *specific* lane?**
