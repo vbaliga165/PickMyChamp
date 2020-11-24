@@ -95,7 +95,7 @@ This project can be broken down into 3 components:
 - **How do I generate a champion for a *specific* lane?**
     - As of yet, this feature is not supported. Check back for future updates!
 - **Will this utility be supported on a mobile platform or website?**
-    - I am currently in the process of making http://pickmychampion.com! Expect it by the end of 2018.
+    - I am currently in the process of making http://pickmychampion.com! Expect it in the near future.
 - **How can I support PickMyChamp?**
     - Spreading the word or generating test cases is more than enough! I'm always looking for feedback, so please reach out to me with advice or ideas for future capabilities.
 
