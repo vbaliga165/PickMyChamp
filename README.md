@@ -21,7 +21,7 @@ python PickMyChamp.py
 
 This project can be broken down into 3 components:
    1. Collecting and manipulating user input
-      - To keep things simple, I only ask for a summoner username and opponent the user is facing, in order to develop a *pseudo "profile"* of the user and their possible picks for the game.
+      - To keep things simple, I only ask for a summoner username and opponent the user is facing, in order to develop a profile of the user and their possible picks for the game.
       - Although we request information from the user at various points, we have to actually interpret it to come to a conclusion. I have basic information about the user, but **how do I actually _transcribe_ it?**
       	- Throughout the whole runtime of the application, I only webscrape two distinct sources:
        	    1. LoL database for user statistics: [op.gg](http://na.op.gg)
@@ -86,7 +86,7 @@ This project can be broken down into 3 components:
        regr = linear_model.LinearRegression()
        regr.fit(X, Y)
        ```
-        - Using [pandas](https://pandas.pydata.org) and [sklearn](https://scikit-learn.org/stable/), I implemented a multiple linear regression with a data frame. The **independent (x)** variables were games played and KDA, and the **dependent (y)** variable was win rate. In other words, I was testing the effects that the number games played and the KDA ratio had on a champion's win rate.
+        - Using [pandas](https://pandas.pydata.org) and [sklearn](https://scikit-learn.org/stable/), I implemented a multiple linear regression with a data frame, utilizing games played, KDA and win rate. In other words, I was testing the effects that the number games played and the KDA ratio had on a champion's win rate.
 ![Graph](images/KDAVsWR.png)
         - When I had generated a prediction of weights for each champion using user-specific stats, I also had to take counter picks into account. If the opponent was strong against a champion in the user's pool, that champion's corresponding weight was multipled by ```0.75```. As you can guess, If the opponent was weak against a champion, the weight was multiplied by ```1.25```. 
         - Sorting the array of weights in descending order, the *champions with the top three highest weights* were returned and printed!
